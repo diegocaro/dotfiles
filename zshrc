@@ -83,9 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To get a preview of the colors http://geoff.greer.fm/lscolors/
-# extracted from http://unix.stackexchange.com/questions/30946/terminal-does-not-source-zshrc-with-custom-colors-for-ls-and-cd-command
 
+## INFO
+# Good article: http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
+
+
+## COLORS
+# To get a preview of the colors http://geoff.greer.fm/lscolors/
 # for os x (explanation http://www.norbauer.com/rails-consulting/notes/ls-colors-and-terminal-app.html)
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 # for linux (explanation http://linux-sxs.org/housekeeping/lscolors.html)
