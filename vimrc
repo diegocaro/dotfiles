@@ -26,7 +26,7 @@ set number
 " Highlight current line
 set cursorline
 
-colorscheme torte
+"colorscheme torte
 
 set nocompatible
 "set mouse=nv
@@ -63,23 +63,4 @@ set incsearch
 set showmatch
 set matchtime=2 
 nnoremap *      *N
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
