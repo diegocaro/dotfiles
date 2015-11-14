@@ -26,4 +26,7 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 export LS_COLORS='di=1;34:ln=1;36:so=32:pi=0;33:ex=32:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=1;34:ow=1;34:'
 
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*:*:*:*:*' menu yes select
+#zstyle ':completion:*:*:*:*:*' menu yes select
+
+# Disable the replacement of diff with git diff
+zstyle ':prezto:module:utility:diff' color 'no'
