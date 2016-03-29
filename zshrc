@@ -14,6 +14,15 @@ fi
 export PATH="/usr/local/sbin:/Users/diegocaro/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+#python local
+PATH="/Users/diegocaro/Library/Python/2.7/bin:$PATH"
+
+export PYTHONPATH=/Users/diegocaro/Library/Python/2.7/lib/python/site-packages:/Library/Python/2.7/site-packages:$PYTHONPATH
+
+# gem path
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+
 ## INFO
 # Good article: http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
 
@@ -30,3 +39,9 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # Disable the replacement of diff with git diff
 zstyle ':prezto:module:utility:diff' color 'no'
+
+
+# Allow clobbering of file redirection
+# By default zsh doesn't let you overwrite existing files with > or create
+# new files with >> if they don't exist. This option reverts that setting.
+setopt CLOBBER

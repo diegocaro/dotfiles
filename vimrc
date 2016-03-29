@@ -24,24 +24,24 @@ let g:airline_powerline_fonts = 1
 set number
 
 " Highlight current line
-set cursorline
+" set cursorline
 
 "colorscheme torte
 
-set nocompatible
+"set nocompatible
 "set mouse=nv
 
-set list
+"set list
 
 "tab behaviour (coding guidelines states 8 for c++ 4 for tcl)
 set tabstop=4
 
-set expandtab       "Use softtabstop spaces instead of tab characters for indentation
-set shiftwidth=4    "Indent by 4 spaces when using >>, <<, == etc.
-set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
+"set expandtab       "Use softtabstop spaces instead of tab characters for indentation
+"set shiftwidth=4    "Indent by 4 spaces when using >>, <<, == etc.
+"set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
 
-set autoindent      "Keep indentation from previous line
-"set smartindent     "Automatically inserts indentation in some cases
+"set autoindent      "Keep indentation from previous line
+set smartindent     "Automatically inserts indentation in some cases
 "set cindent         "Like smartindent, but stricter and more customisable
 
 set hlsearch
