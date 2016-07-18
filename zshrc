@@ -14,6 +14,16 @@ fi
 export PATH="/usr/local/sbin:/Users/diegocaro/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Java path
+if [[ $(uname) == "Darwin" ]]; then export OSX=1; fi
+if [[ $(uname) ==  "Linux" ]]; then export LINUX=1; fi
+
+if [[ -n $OSX ]]; then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+else
+    export JAVA_HOME=/usr/lib/jvm/default-java
+fi
+
 #python local
 PATH="/Users/diegocaro/Library/Python/2.7/bin:$PATH"
 
@@ -22,6 +32,8 @@ export PYTHONPATH=/Users/diegocaro/Library/Python/2.7/lib/python/site-packages:/
 # gem path
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
+
+export HOMEBREW_NO_ANALYTICS=1
 
 ## INFO
 # Good article: http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
@@ -45,3 +57,4 @@ zstyle ':prezto:module:utility:diff' color 'no'
 # By default zsh doesn't let you overwrite existing files with > or create
 # new files with >> if they don't exist. This option reverts that setting.
 setopt CLOBBER
+
