@@ -32,5 +32,8 @@ export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Hom
 
 export PATH=/usr/local/bin:$PATH
 
+export PYTHONPATH=$HOME/Library/Python/2.7/bin
+export PATH=$HOME/Library/Python/2.7/bin:$PATH
+
 # agnoster
 #. ./Projects/dotfiles/agnoster.bash
