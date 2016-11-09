@@ -35,7 +35,11 @@ export PATH=$GEM_HOME/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
 
-## INFO
+# android sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+
+# INFO
 # Good article: http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
 
 
