@@ -1,7 +1,7 @@
 # dotfiles
 My dotfiles :)
 
-The best font for the terminal is Ubuntu Mono + Powerline https://github.com/powerline/fonts/tree/master/UbuntuMono
+The best font for the terminal is Ubuntu Mono + Powerline https://github.com/powerline/fonts/tree/master/UbuntuMono and the [Tomorrow Night Bright](https://github.com/chriskempson/tomorrow-theme) color palette.
 
 Copy and paste the following commands into your terminal/shell:
 ```
