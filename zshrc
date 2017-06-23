@@ -27,7 +27,7 @@ fi
 #python local
 PATH="/Users/diegocaro/Library/Python/2.7/bin:$PATH"
 
-export PYTHONPATH=/Users/diegocaro/Library/Python/2.7/lib/python/site-packages:/Library/Python/2.7/site-packages:$PYTHONPATH
+#export PYTHONPATH=/Users/diegocaro/Library/Python/2.7/lib/python/site-packages:/Library/Python/2.7/site-packages:$PYTHONPATH
 
 # gem path
 export GEM_HOME=$HOME/.gem
@@ -56,6 +56,9 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # Disable the replacement of diff with git diff
 zstyle ':prezto:module:utility:diff' color 'no'
 
+##
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Allow clobbering of file redirection
 # By default zsh doesn't let you overwrite existing files with > or create
