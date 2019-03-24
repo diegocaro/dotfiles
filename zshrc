@@ -25,7 +25,8 @@ else
 fi
 
 #python local
-PATH="/Users/diegocaro/Library/Python/2.7/bin:$PATH"
+#PATH="/Users/diegocaro/Library/Python/3.6/bin:/Users/diegocaro/Library/Python/2.7/bin:$PATH"
+PATH=/usr/local/miniconda3/bin:$PATH
 
 #export PYTHONPATH=/Users/diegocaro/Library/Python/2.7/lib/python/site-packages:/Library/Python/2.7/site-packages:$PYTHONPATH
 
@@ -34,10 +35,11 @@ export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1 
 
 # android sdk
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export PATH=$ANDROID_HOME/platform-tools:$PATH
+#export ANDROID_HOME=/usr/local/opt/android-sdk
+#export PATH=$ANDROID_HOME/platform-tools:$PATH
 
 # INFO
 # Good article: http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
@@ -60,8 +62,13 @@ zstyle ':prezto:module:utility:diff' color 'no'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# do not rename tmux windows
+# https://stackoverflow.com/questions/6041178/keep-the-windows-name-fixed-in-tmux
+DISABLE_AUTO_TITLE=true
+
 # Allow clobbering of file redirection
 # By default zsh doesn't let you overwrite existing files with > or create
 # new files with >> if they don't exist. This option reverts that setting.
 setopt CLOBBER
+
 
