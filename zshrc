@@ -27,7 +27,6 @@ fi
 #python local
 #PATH="/Users/diegocaro/Library/Python/3.6/bin:/Users/diegocaro/Library/Python/2.7/bin:$PATH"
 PATH=/usr/local/miniconda3/bin:$PATH
-=======
 PATH="/Users/diegocaro/Library/Python/3.6/bin:/Users/diegocaro/Library/Python/2.7/bin:$PATH"
 
 #export PYTHONPATH=/Users/diegocaro/Library/Python/2.7/lib/python/site-packages:/Library/Python/2.7/site-packages:$PYTHONPATH
