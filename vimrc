@@ -23,6 +23,9 @@ let g:airline_powerline_fonts = 1
 " Line numbering
 set number
 
+" make backspace work like most other programs
+set backspace=2
+
 " Highlight current line
 "set cursorline
 
