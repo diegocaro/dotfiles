@@ -5,6 +5,11 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+#disable virtualenv
+zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
+#enable conda
+zstyle ':prezto:module:python' conda-init 'on'
+
 #
 # General
 #
